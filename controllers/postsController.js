@@ -34,6 +34,11 @@ router.get("/:id", (req, res) => {
   });
 });
 
+// TODO: Get post by category
+// router.get("/:[categories]", (req, res) => {
+//   // Find posts that match all of the categories passed in and return
+// });
+
 // Delete post by id
 router.delete("/:id", (req, res) => {
   Post.findByIdAndDelete(req.params.id).then((post) => {

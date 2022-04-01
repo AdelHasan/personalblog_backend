@@ -49,7 +49,7 @@ router.delete("/:id", (req, res) => {
   });
 });
 
-//   Update post by id
+// Update post by id
 router.put("/:id", (req, res) => {
   Post.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(
     (post) => {
